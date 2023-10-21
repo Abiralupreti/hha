@@ -14,12 +14,8 @@ public class MainController {
 
 
     @GetMapping("/invoke")
-    public void mainController(){
-        int n = 8; // Number of threads
-        for(int i = 0; i < n; i++) {
-            UtilClass object = new UtilClass();
-            object.start();
-        }
-    }
-    }
+    public String mainController() {
 
+        return "<h1>THis is the main controller</h1>";
+    }
+}
